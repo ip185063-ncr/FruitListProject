@@ -18,6 +18,8 @@ firebaseCrashlyticsBuildtools = "3.0.3"
 volley = "1.2.1"
 coil = "2.4.0"
 espressoContrib = "3.6.1"
+mockito = "5.11.0"
+mockitoKotlin = "5.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -46,6 +48,8 @@ volley = { group = "com.android.volley", name = "volley", version.ref = "volley"
 coil = { module = "io.coil-kt:coil", name = "coil", version.ref = "coil"}
 coilsvg = { module = "io.coil-kt:coil-svg", name = "coilsvg", version.ref = "coil"}
 espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
+mockito = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -11,9 +11,8 @@ import org.json.JSONObject
 import java.beans.PropertyChangeListener
 import kotlin.concurrent.thread
 
-class FruitViewModel(val context: Context) {
+class FruitViewModel(val context: Context, private val repository: FruitRepository) {
 
-    private val repository = FruitRepository()
     private val propertyChangeSupport = PropertyChangeSupport(this)
     var fruits: List<Fruit> = emptyList()
         private set(value) {
@@ -39,6 +38,9 @@ class FruitViewModel(val context: Context) {
             val fList = jsonObj.getJSONArray("list")
             val fruitList = mutableListOf<Fruit>()
             val fruitObj = jsonObj.getJSONObject("fruits")
+             if (jsonResponse == null || fList == null) {
+                return emptyList()
+             }
             for (i in 0 until fList.length()) {
                 val fruitNameKey = fList.getString(i)
                 fruitList.add(Fruit(fruitNameKey,fruitObj.getJSONObject(fruitNameKey).getString("url")))
@@ -47,6 +49,4 @@ class FruitViewModel(val context: Context) {
             return fruitList
         }
     }
-
-
 }

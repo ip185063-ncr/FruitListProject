@@ -10,7 +10,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
 import com.example.myapplication.R
-import com.example.myapplication.ui.viewmodel.FruitViewModel
 
 
 class ImageClick : AppCompatActivity(){

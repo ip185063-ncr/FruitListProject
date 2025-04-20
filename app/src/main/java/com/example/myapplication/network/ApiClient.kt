@@ -13,7 +13,6 @@ import com.example.myapplication.data.model.Fruit
 import com.example.myapplication.ui.viewmodel.FruitViewModel
 import java.net.HttpURLConnection
 import java.net.URL
-import org.json.JSONObject
 import java.io.IOException
 
 

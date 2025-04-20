@@ -67,8 +67,4 @@ class FruitAdapter (private val fruitList: List<Fruit>): RecyclerView.Adapter<Fr
             }
         }
     }
-
-
-
-
 }

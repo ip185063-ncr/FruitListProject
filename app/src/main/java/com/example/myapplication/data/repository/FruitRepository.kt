@@ -5,7 +5,6 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import com.example.myapplication.network.ApiClient
 import com.example.myapplication.data.model.Fruit
-import java.io.IOException
 
 class FruitRepository(){
     @RequiresApi(Build.VERSION_CODES.O)

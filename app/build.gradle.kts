@@ -63,11 +63,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-//    androidTestImplementation(libs.androidx.espresso.contrib)
     androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.mockito)
+    androidTestImplementation(libs.mockito.kotlin)
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     testImplementation(kotlin("test"))
+    implementation(kotlin("test"))
 
 }
